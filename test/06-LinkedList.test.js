@@ -50,6 +50,7 @@ describe("Insert", function () {
       linkedList.add(6);
       linkedList.add(4);
       linkedList.add(2);
+      // --->100
       linkedList.add(7);
       linkedList.add(8);
       linkedList.add(1);

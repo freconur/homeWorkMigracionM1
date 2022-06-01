@@ -4,12 +4,12 @@ const {
     elementoMenorYMayor,
     sumaDeArrays,
     mismoValorMismosElementos
-} = require('../01-Arrays/01-arrays.js')
+} = require('../01-arrays/01-arrays.js')
 
 describe('invertirOrden(array)', function() {
     it('Deberia retornar un array con los elementos invertirdos del array que recibe por parametro', function (){
-       expect(invertirOrden([1, 4, 24, 10, 8])).toStrictEqual([8, 4, 1])
-       expect(invertirOrden([2, 30, 5, 3, 15])).toStrictEqual([3, 5, 2])
+       expect(invertirOrden([1, 4, 24, 10, -8, 6])).toStrictEqual([6, 4, 1])
+       expect(invertirOrden([202, 2, 30, 5, 2003, 15])).toStrictEqual([5, 2])
     })
 })
 

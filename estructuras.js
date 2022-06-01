@@ -18,11 +18,11 @@ function Queue() {
     this.array = [];
   }
   
-  Stack.prototype.push = function(elemento){
+  Stack.prototype.colocar = function(elemento){
     this.array.push(elemento);
   };
   
-  Stack.prototype.pop = function(){
+  Stack.prototype.quitar = function(){
     return this.array.pop();
   };
   
@@ -35,6 +35,24 @@ function Queue() {
   function LinkedList() {
     this.head = null;
     this.len = 0;
+  }
+  // class LinkedList {
+  //   constructor() {
+  //   this.head = null;
+  //   this.len = 0;
+  //   }
+  // }
+  // class Nodo {
+  //   constructor(valor) {
+  //     this.value = valor;
+  //     this.next = null;
+  //   }
+  // }
+
+  function Node(valor){
+    // this.numberNodo = 1;
+    this.value = valor;
+    this.next = null;
   }
 
   
@@ -52,6 +70,7 @@ function Queue() {
       tailActual.next = nuevoNodo;
     }
     this.len++;
+   // nuevoNodo.numberNodo = this.len;
   }
 
   
@@ -99,16 +118,17 @@ function Queue() {
     return null;
   }
   
-  function Node(valor){
-    this.value = valor;
-    this.next = null;
-  }
   
   function BinarySearchTree(valor) {
     this.value = valor;
     this.left = null;
     this.right = null;
   }
+  // function ExtendBinarySearchTree(valor) {
+  //   this.value = valor;
+  //   this.left = null;
+  //   this.right = null;
+  // }
   
 BinarySearchTree.prototype.insert = function(value) {
       if(value < this.value){

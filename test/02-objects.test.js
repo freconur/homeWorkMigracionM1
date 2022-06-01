@@ -89,6 +89,7 @@ describe("Clase", function () {
         "Harry Potter y la piedra filosofal",
         "J. K. Rowling",
         [
+          { idioma: "inglés", editorial: "Sarasa" },
           { idioma: "inglés", editorial: "Scholastic" },
           { idioma: "castellano", editorial: "emece" },
           { idioma: "francés", editorial: "Éditions Gallimard" },
